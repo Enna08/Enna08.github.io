@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(0,0,0);
+}
+
+#outerBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 750px;
+    max-width: 750px;
+    margin: auto;
+}
+
+#menuPanel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 220px;
+    margin-top: 72px;
+    position: sticky;
+    top: 0;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}
+
+.menu{
+    border: 5px solid  #560027;
+    outline: 1px dotted white;
+}
+
+.menu:hover{
+    border: 5px solid orange;
+}

@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Hidden Notes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "styles/indexAndHidden.css">
+    </head>
+    <body>
+        <div id="outerBox">
+            <div id="menuPanel"> 
+                <button class="menu" id="unhide"><img src="Images/eye.png" alt="Unhide Notes" title="Unhide Note"></button> 
+                <button class="menu" id="confirm" style="display: none;"><img src="Images/tick.png" alt="Confirm" title="Confirm"></button> 
+                <button class="menu" id="return"><img src="Images/undo.png" alt="return" title="Return"></button> 
+            </div>    
+            <div id="mainBox">
+                <div id="contentBox">
+                    <div id="heading">
+                        Hidden Notes
+                    </div> 
+                    <div id="filterSortBar"> 
+                        <input type="text" class="filterSort" oninput="filterNote()" placeholder="Search Note"> 
+                        <select class="filterSort" onchange="sort(this.value)">
+                            <option value="lastEdited">Sort by last edited</option>
+                            <option value="alphabetically">Sort alphabetically</option>
+                        </select> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/note-storage.js"></script>
+        <script src="scripts/note-render.js"></script>
+        <script src="scripts/note-hidden.js"></script>
+    </body>
+</html>

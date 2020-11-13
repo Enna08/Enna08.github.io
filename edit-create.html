@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Add Note</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "styles/noteEditCreate.css">
+    </head>
+    <body>
+        <div id="outerBox">
+            <div id="menuPanel">
+                <button class="menu" id="saveReturn"><img src="Images/return.png" alt="Save Note & Return" title="Save & Return"></button>
+            </div>    
+            <div id="mainBox">
+                <div id="contentBox">
+                    <div id="heading">
+                        Note title
+                    </div>    
+                    <label for="noteTitle"></label>
+                    <textarea id="noteTitle" name="Note Title"></textarea> 
+                    <div id="heading">
+                        Note description
+                    </div>   
+                    <label for="noteDescription"></label>
+                    <textarea id="noteDescription" name="Note Description"></textarea> 
+                </div>
+                
+            </div>
+        </div>
+        <script src="scripts/note-structure.js"></script>
+        <script src="scripts/note-storage.js"></script>
+        <script src="scripts/note-edit-create.js"></script>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+body{
+    background-color: rgb(0,0,0);
+}
+
+#outerBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 750px;
+    max-width: 750px;
+    margin: auto;
+}
+
+#menuPanel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    margin-top: 72px;
+    position: sticky;
+    top: 0;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}
+
+.menu{
+    border: 5px solid  #560027;
+    outline: 1px dotted white;
+}
+
+.menu:hover{
+    border: 5px solid orange;
+}
+
+#mainBox{
+    display: flex;
+    flex-direction: column;
+    max-width: 620px;
+    min-height: 800px;
+    margin: auto;
+    margin-top: 80px;
+    border: 4px solid white;
+    outline: 10px solid #560027;
+}  
+
+#contentBox{
+    width: 580px;
+    min-height: 770px;
+    color: white;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #560027;
+    justify-content: flex-start; 
+}
+
+#heading{
+    background-color: #560027;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+#noteTitle, #noteDescription{
+    margin: 20px 7px;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+#noteTitle{ 
+    min-height: 40px;
+}
+
+#noteDescription{
+    min-height: 520px; 
+}

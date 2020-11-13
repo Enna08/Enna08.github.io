@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Make Notes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "styles/indexAndHidden.css">
+    </head>
+    <body>
+        <div id="outerBox">
+            <div id="menuPanel">
+                <button class="menu" id="create"><img src="Images/images.jpeg" alt="Add Note" title="Add Note"></button>
+                <button class="menu" id="hide"><img src="Images/hide.png" alt="Hide Note" title="Hide Note"></button>
+                <button class="menu" id="delete"><img src="Images/dump.png" alt="Delete Note" title="Delete Note"></button> 
+                <button class="menu" id="hiddenNotes" style="display: none;"><img src="Images/hidden.png" alt="Hidden Notes" title="Hidden Notes"></button> 
+                <button class="menu" id="confirm" style="display: none;"><img src="Images/tick.png" alt="Confirm" title="Confirm"></button> 
+                <button class="menu" id="return" style="display: none;"><img src="Images/undo.png" alt="Return" title="Return"></button>                                      
+            </div>    
+            <div id="mainBox">
+                <div id="contentBox">
+                    <div id="heading">
+                        Take notes & never forget
+                    </div> 
+                    <div id="filterSortBar"> 
+                        <input type="text" class="filterSort" oninput="filterNote()" placeholder="Search Note"> 
+                        <select class="filterSort" onchange="sort(this.value)">
+                            <option value="lastEdited">Sort by last edited</option>
+                            <option value="alphabetically">Sort alphabetically</option>
+                        </select> 
+                    </div>
+                    <!--<div class="noteBox">
+                        <span>Ananya Pandey</span>
+                        <p>Last edited 7 years ago</p>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+        <script src="scripts/note-storage.js"></script>
+        <script src="scripts/note-render.js"></script>
+        <script src="scripts/note-main-page.js"></script>
+    </body>
+</html>

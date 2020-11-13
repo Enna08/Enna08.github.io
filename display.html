@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Display Note</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "styles/display.css">
+    </head>
+    <body>
+        <div id="outerBox">
+            <div id="menuPanel">
+                <button class="menu"><img src="Images/edit.png" alt="Edit Note" title="Edit"></button>
+                <button class="menu"><img src="Images/undo.png" alt="return" title="Return"></button>
+            </div>    
+            <div id="mainBox">
+                <div id="contentBox">
+                    <div class="note">
+                        <h2>TITLE</h2>
+                        <p id="title"></p>
+                        <h2>DESCRIPTION</h2>
+                        <p id="description"></p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <script src="scripts/note-display.js"></script>
+    </body>
+</html>
